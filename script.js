@@ -223,6 +223,38 @@ tl.to('.service-element', {
     stagger: 0.5,
 });
 
+let testTl1 = gsap.timeline({
+    scrollTrigger: {
+        trigger: '.why-choose-us',
+        start: 'top bottom',
+        end: 'bottom top',
+        scrub: true,
+    }
+});
+
+testTl1.to('.choose-shape', {
+    rotation: 360,
+    y: 0,
+    opacity: 1,
+    stagger: 0.5,
+});
+
+let testTl2 = gsap.timeline({
+    scrollTrigger: {
+        trigger: '.why-choose-us',
+        start: 'top bottom',
+        end: 'bottom top',
+        scrub: true,
+    }
+});
+
+testTl2.to('.choose-shape2', {
+    rotation: -360,
+    y: 0,
+    opacity: 1,
+    stagger: 0.5,
+});
+
 
 const options = {
     distance: '200px',
@@ -300,35 +332,3 @@ ScrollReveal().reveal('.testimonial-swiper', {
     duration: 1200,
 });
 
-
-let testTl1 = gsap.timeline({
-    scrollTrigger: {
-        trigger: '.why-choose-us',
-        start: 'top bottom',
-        end: 'bottom top',
-        scrub: true,
-    }
-});
-
-testTl1.to('.choose-shape', {
-    rotation: 360,
-    y: 0,
-    opacity: 1,
-    stagger: 0.5,
-});
-
-let testTl2 = gsap.timeline({
-    scrollTrigger: {
-        trigger: '.why-choose-us',
-        start: 'top bottom',
-        end: 'bottom top',
-        scrub: true,
-    }
-});
-
-testTl2.to('.choose-shape2', {
-    rotation: -360,
-    y: 0,
-    opacity: 1,
-    stagger: 0.5,
-});
