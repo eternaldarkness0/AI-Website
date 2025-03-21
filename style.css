@@ -2970,7 +2970,7 @@ footer {
         padding-left: 2%;
     }
     .menu {
-        padding: 20px 4%;
+        padding: 20px 2%;
         gap: 20px;
     }
 
@@ -3604,6 +3604,12 @@ footer {
     }
 }
 
+@media (max-width: 550px) {
+    .feedback-counter {
+        width: 100%;
+    }
+}
+
 @media (max-width: 500px) {
     header {
         height: 100vh;
@@ -3620,6 +3626,7 @@ footer {
         display: flex;
         flex-direction: column;
         gap: 30px;
+        margin-top: 10px;
     }
 
     .hero-content h1 {
@@ -3764,6 +3771,7 @@ footer {
     .page-section {
         top: 0;
         left: 0;
+        opacity: 1;
     }
 
     .body-about .hero-content .btn {
@@ -3957,5 +3965,24 @@ footer {
         font-size: 26px;
         padding: 25px 10px;
         line-height: unset;
+    }
+}
+
+@media (max-width: 400px) {
+    .hero-header .hero-content h1 {
+        font-size: 30px;
+        line-height: 38px;
+    }
+
+    .hero-content p {
+        font-size: 12px;
+    }
+
+    .menu.active {
+        gap: 0;
+    }
+
+    .menu li {
+        justify-content: center;
     }
 }
