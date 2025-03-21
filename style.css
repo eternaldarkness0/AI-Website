@@ -1625,10 +1625,6 @@ footer {
     gap: 50px;
 }
 
-.body-about {
-    overflow-x: unset;
-}
-
 .footer-marquee1 {
     display: none;
 }
