@@ -1522,6 +1522,7 @@ footer {
     top: -150px;
     left: -33%;
     z-index: 1;
+    opacity: 0;
 }
 
 .page-section::after {
@@ -2728,6 +2729,22 @@ footer {
 
 /* Responsive section */
 
+@media (max-width: 1805px) {
+    .page-section {
+        top: -110px;
+    }
+}
+
+@media (max-width: 1675px) {
+    .process-box {
+        left: 10%;
+    }
+
+    .process-box3 {
+        left: 91%;
+    }
+}
+
 @media (max-width: 1400px) {
     .call-us {
         display: none;
@@ -2863,11 +2880,15 @@ footer {
         font-size: 24px;
     }
 
+    .swiper-btn4 i::after {
+        display: none;
+    }
+
     /* about page section */
 
     .page-section {
-        top: -135px;
-        left: -28%;
+        top: -100px;
+        left: -10%;
     }
 
     .about-page-title h1 {
@@ -2929,7 +2950,25 @@ footer {
     }
 }
 
+@media (max-width: 1300px) {
+    .hero-content .btn {
+        display: none;
+    }
+}
+
+@media (max-width: 965px) {
+    .nav-social-icon {
+        display: none;
+    }
+    .nav-left {
+        padding-left: 0%;
+    }
+}
+
 @media (max-width: 1200px) {
+    .nav-left {
+        padding-left: 2%;
+    }
     .menu {
         padding: 20px 4%;
         gap: 20px;
@@ -3042,8 +3081,8 @@ footer {
 
     /* about page section */
     .page-section {
-        top: -160px;
-        left: -26%;
+        top: -100px;
+        left: -1%;
     }
 
     .about-page-title h1 {
@@ -3578,6 +3617,9 @@ footer {
 
     .hero-content {
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
     }
 
     .hero-content h1 {
@@ -3586,9 +3628,7 @@ footer {
     }
 
     .hero-img {
-        top: 73%;
-        left: 60%;
-        width: 80%;
+        display: none;
     }
 
     .swiper-btn-next {
@@ -3724,6 +3764,18 @@ footer {
     .page-section {
         top: 0;
         left: 0;
+    }
+
+    .body-about .hero-content .btn {
+        display: none;
+    }
+
+    .body-about .hero-content {
+        gap: 10px;
+    }
+
+    .hero-header {
+        padding-top: 1%;
     }
 
     .about-page {
